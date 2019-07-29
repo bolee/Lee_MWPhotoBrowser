@@ -52,6 +52,9 @@
 @property (nonatomic) BOOL autoPlayOnAppear;
 @property (nonatomic) NSUInteger delayToHideElements;
 @property (nonatomic, readonly) NSUInteger currentIndex;
+// add by Lee: 2019-7-29
+// only presentViewController will set yes
+@property (nonatomic) BOOL tapHidden;
 
 // Customise image selection icons as they are the only icons with a colour tint
 // Icon should be located in the app's main bundle
