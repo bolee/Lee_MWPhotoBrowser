@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
-  s.name = 'Lee_MWPhotoBrowser'
-  s.version = '3.0.0'
+  s.name = 'MWPhotoBrowser'
+  s.version = '3.0.1'
   s.license = 'MIT'
   s.summary = 'A simple iOS photo and video browser with optional grid view, captions and selections.'
   s.description = <<-DESCRIPTION
@@ -19,13 +19,13 @@ Pod::Spec.new do |s|
     'https://raw.github.com/mwaterfall/MWPhotoBrowser/master/Screenshots/MWPhotoBrowser6.png'
   ]
 
-  s.homepage = 'https://github.com/bolee/Lee_MWPhotoBrowser'
+  s.homepage = 'http://git.pinpianyi.com:8110/CocoaPods/MWPhotoBrowser'
   s.author = { 'Lee' => 'cn.bobolee.org@gmail.com' }
   s.social_media_url = 'https://twitter.com/cnbobolee'
 
   s.source = {
-    :git => 'https://github.com/bolee/Lee_MWPhotoBrowser.git',
-    :tag => '3.0.0'
+    :git => 'http://git.pinpianyi.com:8110/CocoaPods/MWPhotoBrowser.git',
+    :tag => '3.0.1'
   }
   s.platform = :ios, '7.0'
   s.source_files = 'Pod/Classes/**/*'
@@ -37,12 +37,12 @@ Pod::Spec.new do |s|
   s.frameworks = 'ImageIO', 'QuartzCore', 'AssetsLibrary', 'MediaPlayer'
   s.weak_frameworks = 'Photos'
 
-  s.dependency 'MBProgressHUD', '~> 0.9'
+  s.dependency 'MBProgressHUD'#, '~> 0.9'
   s.dependency 'DACircularProgress', '~> 2.3'
 
   # SDWebImage
   # 3.7.2 contains bugs downloading local files
   # https://github.com/rs/SDWebImage/issues/1109
-  s.dependency 'SDWebImage', '~> 3.7', '!= 3.7.2'
+  s.dependency 'SDWebImage' #, '~> 3.7', '!= 3.7.2'
 
 end
