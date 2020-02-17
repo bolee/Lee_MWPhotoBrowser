@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name = 'MWPhotoBrowser'
-  s.version = '3.0.1'
+  s.version = '3.0.2'
   s.license = 'MIT'
   s.summary = 'A simple iOS photo and video browser with optional grid view, captions and selections.'
   s.description = <<-DESCRIPTION
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
   s.source = {
     :git => 'http://git.pinpianyi.com:8110/CocoaPods/MWPhotoBrowser.git',
-    :tag => '3.0.1'
+    :tag => '3.0.2'
   }
   s.platform = :ios, '7.0'
   s.source_files = 'Pod/Classes/**/*'
